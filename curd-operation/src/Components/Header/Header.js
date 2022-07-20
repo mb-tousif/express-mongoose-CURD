@@ -9,7 +9,6 @@ import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import Logo from "../../Assets/logo.png";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -29,10 +28,8 @@ const Header = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
-            variant="h5"
-            noWrap
+            variant="h6"
             component="a"
             href=""
             sx={{
@@ -47,7 +44,6 @@ const Header = () => {
           >
             User Management System
           </Typography>
-
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="User settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>

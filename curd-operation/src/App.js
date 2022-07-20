@@ -1,12 +1,12 @@
 import './App.css';
 import Header from './Components/Header/Header';
-import UserData from './Components/UserData/UserData';
+import UserUi from './Components/UserUI/UserUi';
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <UserData/>
+      <UserUi/>
     </div>
   );
 }
